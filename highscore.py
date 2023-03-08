@@ -13,7 +13,3 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("cape_town_quiz")
 
 highscore = SHEET.worksheet('highscore')
-
-data = highscore.get_all_values()
-
-print(data)

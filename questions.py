@@ -4,27 +4,27 @@ The answer is always the 1st answer.
 To stop the user realising this - the alternatives are sorted.
 """
 
-sea_questions = {
-    "What percentage of the Earth's surface is covered by Oceans?: ":
-    ["A. 70%", "B. 50%", "C. 40%", "D. 20%"],
-    "What is the percentage of the planet's oceans that have been explored? ":
-    ["A. 5%", "B. 25%", "C. 50%", "D. 75%"],
-    "Which one the following islands is not in the Atlantic Ocean? ":
-    ["A. Madagascar", "B. Azores", "C, The Bahanmas", "D, Canarary Islands"],
-    "Which of the following oceans is the smallest and the shallowest? ":
-    ["A, Arctic", "B. Pacific", "C. Indian", "D. Atlantic"],
-    "What is the name of the deepest known trench on the planet in the sea? ":
-    ["A. Mariana Trench", "B. The Trench", "C. A Trench", "D.Izu-Ogas Trench"],
-    "How many Oceans does the equator cross? ":
-    ["A. 3", "B. 2", "C. 5", "D. 4"],
-    "Approx ____ of the Earth's surface is covered by Ocean? ":
-    ["A. 71%", "B. 56%", "C. 45%", "D. 40%"],
-    "The underground Ring of Fire zone is along the floor of which ocean? ":
-    ["A. Pacific", "B. Atlantic", "C. Southern", "D. Arctic"],
-    "Which ocean is frozen for much of the year? ":
-    ["A. Arctic", "B. Atlantic", "C. Indian", "D. Pacific"],
-    "Which ocean lies between Australia and Africa? ":
-    ["A. Indian", "B. Arctic", "C. Atlantic", "D. Pacific"],
+questions = {
+    "What percentage of the Earth's surface is covered by Oceans?":
+    ["70%", "50%", "40%", "20%"],
+    "What is the percentage of the planet's oceans that have been explored?":
+    ["5%", "25%", "50%", "75%"],
+    "Which one the following islands is not in the Atlantic Ocean?":
+    ["Madagascar", "Azores", "The Bahanmas", "Canarary Islands"],
+    "Which of the following oceans is the smallest and the shallowest?":
+    ["Arctic", "Pacific", "Indian", "Atlantic"],
+    "What is the name of the deepest known trench on the planet in the sea?":
+    ["Mariana Trench", "The Trench", "A Trench", "Izu-Ogas Trench"],
+    "How many Oceans does the equator cross?":
+    ["3", "2", "5", "4"],
+    "Approx ____ of the Earth's surface is covered by Ocean?":
+    ["71%", "56%", "45%", "40%"],
+    "The underground Ring of Fire zone is along the floor of which ocean?":
+    ["Pacific", "Atlantic", "Southern", "Arctic"],
+    "Which ocean is frozen for much of the year?":
+    ["Arctic", "Atlantic", "Indian", "Pacific"],
+    "Which ocean lies between Australia and Africa?":
+    ["Indian", "Arctic", "Atlantic", "Pacific"],
 }
 
 cape_town_history = {
