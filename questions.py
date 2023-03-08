@@ -29,44 +29,44 @@ questions = {
 
 cape_town_history = {
     "What other name is Cape Town also known as? ":
-    ["A. Mother City", "B. Father City", "C. Golden City", "D. Ancient City"],
+    ["Mother City", "Father City", "Golden City", "Ancient City"],
     "In which province is the city located? ":
-    ["A. Western Cape", "B. Eastern Cape", "C. North Cape", "D. South Cape"],
+    ["Western Cape", "Eastern Cape", "North Cape", "South Cape"],
     "What year was the city founded?: ":
-    ["A. 1652", "B. 1624", "C. 1691", "D.1624"],
+    ["1652", "1624", "1691", "1624"],
     "What language is majorly used in the city? ":
-    ["A. English", "B. Xhorsa", "C. Arikaans", "D. Bandu"],
+    ["English", "Xhorsa", "Arikaans", "Bandu"],
     "Which of these were instrumental in the creation of the city? ":
-    ["A. Dutch East India Company", "B. HSBC", "C. PEPSI", "D. The Company"],
+    ["Dutch East India Company", "HSBC", "PEPSI", "The Company"],
     "At which hospital was the worlds first ever heart trasnplant performed? ":
-    ["A. Groote Schuur", "B. Tygerberg", "C. Great Almond Street", "D. A&E"],
+    ["Groote Schuur", "Tygerberg", "Great Almond Street", "A&E"],
     "What is the name of the ocean that surrounds Cape Town? ":
-    ["A. Atlanic", "B. Indian", "C. Artic", "D. Pacfic"],
+    ["Atlanic", "Indian", "Artic", "Pacfic"],
     "What Alcohic beverage is the Cape famous for producing? ":
-    ["A. Wine", "B. Sake", "C. Whiskey", "D. Vodka"],
+    ["Wine", "Sake", "Whiskey", "Vodka"],
     "In what part of South Africa is Cape Town Located?? ":
-    ["A. South", "B. East", "C. North", "D. West"],
+    ["South", "East", "North", "West"],
     "What is mined at Kimberley in South Africa?":
-    ["A. Diamonds", "B. Gold", "C. Silver", "D. Wine"],
+    ["Diamonds", "Gold", "Silver", "Wine"],
 }
 
 land_animals_questions = {
     "Which country has the most sheep in the world? ":
-    ["A. China", "B. Wales", "C. India", "D. Ireland"],
+    ["China", "Wales", "India", "Ireland"],
     "What is the worlds fastest land animal? ":
-    ["A. Cheetah", "B. Carcal", "C, leopard", "D. Lion"],
+    ["Cheetah", "Carcal", "leopard", "Lion"],
     "What is the largest feline cat in Africa?":
-    ["A. Lion", "B. Cheetah", "C, Carcal", "D. Tom"],
+    ["Lion", "Cheetah", "Carcal", "Tom"],
     "Which creature spends most of its time alone, rather than in a group?":
-    ["A. Leopard", "B. Carcal", "C, Cheetah", "D. Lion"],
+    ["Leopard", "Carcal", "Cheetah", "Lion"],
     "What is the closest living relative of the Hippo? ":
-    ["A. Whale", "B. Warthog", "C, Rhino", "D. Elephant"],
+    ["Whale", "Warthog", "Rhino", "Elephant"],
     "How wide can a hippo stretch it's jaws? ":
-    ["A. 150 degrees", "B. 120 degrees", "C, 90 degrees", "D. 65 degrees"],
+    ["150 degrees", "120 degrees", "90 degrees", "65 degrees"],
     "How many legs does a butterfly have? ":
-    ["A. 6", "B. 8", "C. 2", "D. 4"],
+    ["6", "8", "2", "4"],
     "Which of the following is not a true snake? ":
-    ["A. Glass snake", "B. Tree Snake", "C. Blind Snake", "D. Sea Snake"],
+    ["Glass snake", "Tree Snake", "Blind Snake", "Sea Snake"],
     "What is Rhino Horn made of? ":
-    ["A. Kerotin", "B. Bones", "C. Collagen", "D. Fibroin"],
+    ["Kerotin", "Bones", "Collagen", "Fibroin"],
     }
