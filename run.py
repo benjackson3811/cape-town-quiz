@@ -11,30 +11,23 @@ from questions import NUM_QUESTIONS_PER_QUIZ
 from questions import QUESTIONS
 
 
+def run_quiz():
+    questions = prepare_questions(
+        QUESTIONS, num_questions=NUM_QUESTIONS_PER_QUIZ
+    )
+
+    num_correct = 0
+    for num, (question, options) in enumerate(questions, start=1):
+        print(f"\nQuestion {num:}")
+        num_correct += ask_question(question, options)
+
+
 def prepare_questions(questions, num_questions):
-    """
-    function to define the question to be asked and their question number
-    """
     num_questions = min(num_questions, len(questions))
     return random.sample(list(questions.items()), k=num_questions)
 
 
-def get_answer(question, option):
-    """
-    function to identify the correct answer to the question asked to the user,
-    """
-    print(f"{question}?")
-    sorted_options = dict(zip(ascii_lowercase, options))
-    for choice, option in sorted_options.items():
-        print(f" {choice}) {option}")
-
-    return sorted_options[answer_choice]
-
-
 def ask_question(question, options):
-    """
-    NEED DESCRIPTION
-    """
     right_answer = options[0]
     sorted_options = random.sample(options, k=len(options))
 
@@ -47,19 +40,17 @@ def ask_question(question, options):
         return 0
 
 
-def run_quiz():
-    """
-    NEED DESCRIPTION
-    """
-    questions = prepare_questions(
-        QUESTIONS, num_questions=NUM_QUESTIONS_PER_QUIZ
-    )
+def get_answer(question, options):
+    print(f"{question}?")
+    sorted_options = dict(zip(ascii_lowercase, options))
+    for choice, option in sorted_options.items():
+        print(f" {choice}) {option}")
 
-    num_correct = 0
-    for num, (questions, options) in enumerate(questions, start=1):
-        print(f"\nYou got {num_correct} correct out of {num} questions")
+    while (answer_choice := input("\nChoice? ")) not in sorted_options:
+        print(f"Please answer one of {', '.join(sorted_options)}")
 
-    if __name__ == "__main__":
-        run_quiz()
+    return sorted_options[answer_choice]
 
-run_quiz()
+
+if __name__ == "__main__":
+    run_quiz()
