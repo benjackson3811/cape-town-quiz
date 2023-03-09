@@ -5,7 +5,7 @@ To stop the user realising this - the alternatives are sorted.
 """
 
 NUM_QUESTIONS_PER_QUIZ = 5
-QUESTIONS = {
+sea_questions = {
     "What percentage of the Earth's surface is covered by Oceans?":
     ["70%", "50%", "40%", "20%"],
     "What is the percentage of the planet's oceans that have been explored?":
