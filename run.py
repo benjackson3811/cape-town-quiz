@@ -8,8 +8,7 @@ Importing the libraries for the running of the quiz
 import random
 import os
 import time
-from string import ascii_lowercase
-from questions import NUM_QUESTIONS_PER_QUIZ
+from string import ascii_uppercase
 from questions import sea_questions
 
 
@@ -19,10 +18,13 @@ def quiz_logo():
     """
     print("       ***** 🇿🇦 🌎Cape Town Quiz ! 📣☀ *****                    ")
     print()
+    print("         As a current resident of Cape Town.                    ")
     print()
-    print(" As a current resident of Cape Town.                             ")
-    print(" I have built a simple multiple choice quiz                      ")
-    print(" To share questions on of my favorite three topics               ")
+    print("       I have built a simple multiple choice quiz               ")
+    print()
+    print("              To celebrate the city                             ")
+    print()
+    print("  here are questions on of three topic that define Cape Town.   ")
     time.sleep(2)
     clear_screen()
 
@@ -34,18 +36,24 @@ def instructions():
     print("Welcome to the Quiz!")
     print()
     print("                The Rules of the Quiz                        ")
-    print()
+    time.sleep(2)
     print("You will have a choice of three quiz topics to choose from:  ")
-    print("              1) The Sea 💺                                  ")
-    print("              2) 🐮 Cape Town History                        ")
-    print("              3) 🐆 Land Animals of Africa  🐅               ")
-    print()
+    # ----------------------------------------------------------------
+    clear_screen()
     print("             For each topic you answer 5 questions            ")
     print("             You can only answer A, B, C or D                 ")
+    #  ---------------------------------------------------------------
     print("             You will know your answer sraight away           ")
     print("                     If correct great!                        ")
     print("                    If not, thats ok!                         ")
-    print()
+    clear_screen()
+    print("       Choose 1,2 or 3 to answer questions on that topic      ")
+    #  ---------------------------------------------------------------
+    print("              1) The Sea 💺                                   ")
+    print("              2) 🐮 Cape Town History                         ")
+    print("              3) 🐆 Land Animals of Africa  🐅                ")
+    time.sleep(2)
+    
     print("                At the end of the quiz.                       ")
     print("                You will see your total score.                ")
     print("                Then you can try and beat it!                 ")
@@ -55,12 +63,17 @@ def instructions():
 
 
 def run_quiz():
+    NUM_QUESTIONS_PER_QUIZ = 5
+    right_answer = []
+
+
     questions = prepare_questions(
         sea_questions, num_questions=NUM_QUESTIONS_PER_QUIZ
     )
 
     num_correct = 0
     for num, (question, options) in enumerate(questions, start=1):
+        print("------------------")
         print(f"\nQuestion {num:}")
         num_correct += ask_question(question, options)
 
@@ -85,7 +98,7 @@ def ask_question(question, options):
 
 def get_answer(question, options):
     print(f"{question}?")
-    sorted_options = dict(zip(ascii_lowercase, options))
+    sorted_options = dict(zip(ascii_uppercase, options))
     for choice, option in sorted_options.items():
         print(f" {choice}) {option}")
 
@@ -101,20 +114,6 @@ def clear_screen():
     """
     os.system('clear')
 
-def new_game():
-    """
-    Funciton to provide the option if user wants to play again
-    """
-    input("New Game? ?\n Please enter y or n")
-    if input == "y":
-        return True
-    elif input == "n":
-        return False
-    else:
-        print("please print y or n")
-        clear_screen()
-        return new_game()
-
 
 
 def start():
@@ -124,7 +123,7 @@ def start():
     quiz_logo()
     instructions()
     run_quiz()
-    new_game()
+    
 
 
 if __name__ == "__main__":

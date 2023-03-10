@@ -4,7 +4,6 @@ The answer is always the 1st answer.
 To stop the user realising this - the alternatives are sorted.
 """
 
-NUM_QUESTIONS_PER_QUIZ = 5
 sea_questions = {
     "What percentage of the Earth's surface is covered by Oceans?":
     ["70%", "50%", "40%", "20%"],
